@@ -1,0 +1,9 @@
+{{ define "main" }}
+    <template class="debug-marker">Start of index.html.</template>
+
+    <h1>{{ .Title }}</h1>
+
+    {{ partial "list-all-pages.html" . }}
+
+    <template class="debug-marker">End of index.html.</template>
+{{ end }}

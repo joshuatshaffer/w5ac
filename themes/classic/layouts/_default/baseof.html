@@ -1,0 +1,11 @@
+<html>
+<head>
+    <title>{{ .Title }}</title>
+</head>
+<body>
+    <template class="debug-marker">Start of main block in _default/baseof.html.</template>
+    {{ block "main" . }}
+    {{ end }}
+    <template class="debug-marker">End of main block.</template>
+</body>
+</html>

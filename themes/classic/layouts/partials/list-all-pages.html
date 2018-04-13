@@ -1,0 +1,7 @@
+<template class="debug-marker">Start of partials/list-all-pages.html.</template>
+
+{{ range sort .Paginator.Pages }}
+    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+{{ end }}
+
+<template class="debug-marker">End of partials/list-all-pages.html.</template>
