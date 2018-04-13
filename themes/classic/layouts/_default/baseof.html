@@ -1,8 +1,11 @@
 <html>
 <head>
     <title>{{ .Title }}</title>
+    <link rel="stylesheet" type="text/css" href="/style.css"/>
 </head>
 <body>
+    {{ partial "header.html" . }}
+
     <template class="debug-marker">Start of main block in _default/baseof.html.</template>
     {{ block "main" . }}
     {{ end }}
