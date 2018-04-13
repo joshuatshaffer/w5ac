@@ -3,6 +3,10 @@
 
     <h1>{{ .Title }}</h1>
 
+    <div class="content">
+        {{ .Content }}
+    </div>
+
     {{ partial "list-all-pages.html" . }}
 
     <template class="debug-marker">End of _default/list.html.</template>
