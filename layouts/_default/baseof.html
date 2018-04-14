@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>{{ .Title }}</title>
@@ -6,9 +7,12 @@
 <body>
     {{ partial "header.html" . }}
 
-    <template class="debug-marker">Start of main block in _default/baseof.html.</template>
-    {{ block "main" . }}
-    {{ end }}
-    <template class="debug-marker">End of main block.</template>
+    <main>
+        {{ block "main" . }}
+            <h1>This page has no main block for some reason.</h1>
+        {{ end }}
+    </main>
+
+    {{ partial "footer.html" . }}
 </body>
 </html>

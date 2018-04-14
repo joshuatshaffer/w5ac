@@ -1,3 +1,6 @@
+body {
+    font-family: sans-serif;
+}
 
 header img {
     max-width: 100%;
@@ -10,11 +13,14 @@ header {
 
 nav {
     background-color: #ddd;
+    box-shadow: 1px 2px 8px rgba(0,0,0,0.4);
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
+    width: 100%;
+    max-width: 150px;
 }
 
 .dropdown:hover {
@@ -26,7 +32,9 @@ nav {
     position: absolute;
     background-color: #ddd;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
+    padding: 5px;
+    left: -5px;
+    min-width: 100%;
     z-index: 1;
 }
 
@@ -36,4 +44,12 @@ nav {
 
 .dropdown-content *:hover {
     background-color: white;
+}
+
+.dropdown-content * {
+    display: block;
+    color: #8E1D36;
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
