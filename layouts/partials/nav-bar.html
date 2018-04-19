@@ -1,34 +1,12 @@
 <nav>
+    {{ range .Site.Menus.navmain }}
     <section class="dropdown">
-        <span>About Us</span>
+        <span>{{ .Name }}</span>
         <div class="dropdown-content">
-            <a href="/404.html">What is W5AC</a>
-            <a href="/history">History</a>
-            <a href="/404.html">Officers</a>
-            <a href="/404.html">Constitution</a>
-            <a href="/404.html">Contact Us</a>
+            {{- range .Children }}
+            <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+            {{- end }}
         </div>
     </section>
-    <section class="dropdown">
-        <span>Club Resources</span>
-        <div class="dropdown-content">
-            <a href="/info/repeater">Repeater</a>
-            <a href="/404.html">Shack</a>
-        </div>
-    </section>
-    <section class="dropdown">
-        <span>Join!</span>
-        <div class="dropdown-content">
-            <a href="/404.html">Become a Member</a>
-            <a href="/404.html">Get Licensed</a>
-        </div>
-    </section>
-    <section class="dropdown">
-        <span>Activities</span>
-        <div class="dropdown-content">
-            <a href="/announcements">Announcements</a>
-            <a href="/calendar">Calendar</a>
-            <a href="/minutes">Meeting Minutes</a>
-        </div>
-    </section>
+    {{ end }}
 </nav>

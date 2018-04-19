@@ -1,17 +1,18 @@
 ---
 title: "Repeater"
-date: 2018-04-13T14:16:14-05:00
-draft: true
+menu:
+    navmain:
+        parent: resources
 ---
 
-# FM Repeater Quick List
+## FM Repeater Quick List
 
-| Base Freq (MHz) | Offset (kHz) | CTCSS (Hz) | Location | Mode(s) |
-|---------------|--------------|-----------|----------|-------|
-| 146.820 | -600 | 88.5 | The O&M Building | FM Voice |
-| 443.050 | -600 | 88.5 | 30.61&deg; N 96.34&deg; W | FM Voice |
+| Base Freq (MHz) | Offset (kHz) | CTCSS (Hz) | Location                  | Mode(s)  |
+|-----------------|--------------|------------|---------------------------|----------|
+| 146.820         | -600         | 88.5       | The O&M Building          | FM Voice |
+| 443.050         | -600         | 88.5       | 30.61&deg; N 96.34&deg; W | FM Voice |
 
-146.82 Repeater
+## 146.82 Repeater
 
 W5AC's main repeater transmits on 146.820 MHz and receives on 146.220 MHz. Look here for frequently asked questions about repeaters.
 
