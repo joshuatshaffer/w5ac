@@ -1,8 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head lang="{{ .Site.LanguageCode }}">
     <title>{{ block "title" . }}{{ .Title }} &ndash; {{ .Site.Title }}{{ end }}</title>
-    <link rel="stylesheet" type="text/css" href="/style.css"/>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{ .Hugo.Generator }}
+
+    <link rel="stylesheet" type="text/css" href="{{ "style.css" | relURL }}"/>
+    {{ range .AlternativeOutputFormats }}
+        <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
+    {{ end }}
+    {{/* TODO: make and link the favicon.ico */}}
+    {{/* TODO: make and link a licence */}}
+    {{/* TODO: make and link a help page */}}
+    {{ block "extra-head" . }}
+        {{/* This block allows pages to add to the html's head.
+           * Use this for things such as page spesific stylesheets and
+           * link tags such as author and prev/next.
+           */}}
+    {{ end }}
 </head>
 <body>
     {{ partial "header.html" . }}
