@@ -4,7 +4,7 @@
         <span>{{ .Name }}</span>
         <div class="dropdown-content">
             {{- range .Children }}
-            <a href="{{ .URL | relURL }}">{{ .Name }}</a>
+            <a href="{{ .URL }}">{{ .Name }}</a>
             {{- end }}
         </div>
     </section>
