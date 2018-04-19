@@ -1,11 +1,13 @@
 
 {{/* Only put the site title on the home page. */}}
-{{ define "title" }}
+{{ define "title" -}}
 {{ .Site.Title }}
-{{ end }}
+{{- end }}
 
 {{ define "main" }}
-    <h1>{{ .Title }}</h1>
+
+    {{/* A welcome message as is common on home pages. */}}
+    <article>{{ .Content }}</article>
 
     {{ partial "list-all-pages.html" . }}
 
