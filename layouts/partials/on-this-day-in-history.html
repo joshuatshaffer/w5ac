@@ -1,0 +1,10 @@
+<section hidden id="on-this-day-in-history">
+    {{- range where .Site.RegularPages "Section" "==" "history" }}
+        <article hidden class="{{ printf "%02d" .Date.Month }}-{{ printf "%02d" .Date.Day }}">
+            <h2>On this day in <time>{{ .Date.Format "2006" }}</time></h2>
+            <h3>{{ .Title }}</h3>
+            <p>{{ .Summary }}</p>
+            <a href="{{ .Permalink }}">read more...</a>
+        </article>
+    {{- end }}
+</section>
