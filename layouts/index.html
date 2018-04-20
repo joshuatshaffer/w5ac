@@ -7,8 +7,9 @@
 {{ define "main" }}
 
     {{/* A welcome message as is common on home pages. */}}
-    <article>{{ .Content }}</article>
-
-    {{ partial "list-all-pages.html" . }}
+    <article id="welcome-message">{{ .Content }}</article>
+    {{ partial "announcements-list.html" . }}
+    {{ partial "on-this-day-in-history" . }}
+    {{ partial "blog-list.html" . }}
 
 {{ end }}

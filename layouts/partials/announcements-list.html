@@ -1,10 +1,5 @@
 <section id="announcements">
     {{- range where .Site.RegularPages "Section" "==" "announcements" }}
-        <article class="announcement-summary">
-            <h2>{{ .Title }}</h2>
-            <h6>Posted <time>{{ .Date.Format "2-January-2006" }}</time></h6>
-            {{ .Summary }}
-            <a href="{{ .Permalink }}">read more...</a>
-        </article>
+        {{ partial "page-preview.html" . }}
     {{- end }}
 </section>

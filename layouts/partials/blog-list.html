@@ -1,0 +1,5 @@
+<section id="blog-list">
+    {{- range where .Site.RegularPages "Section" "==" "blog" }}
+        {{ partial "page-preview.html" . }}
+    {{- end }}
+</section>

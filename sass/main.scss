@@ -29,3 +29,10 @@ footer {
     font-size: x-small;
     text-align: center;
 }
+
+#announcements>article {
+    display: block;
+    background-color: #D4E4F9;
+    border: 1px dashed black;
+    padding: 5px;
+}
