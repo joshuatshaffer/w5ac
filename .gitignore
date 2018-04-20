@@ -1,1 +1,10 @@
+# Output and build files.
 public
+.sass-cache
+
+# Generated static assets.
+static/css
+
+# Don't manage binary files with git.
+static/images
+static/downloads

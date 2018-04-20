@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {{ .Hugo.Generator }}
 
-    <link rel="stylesheet" type="text/css" href="{{ "style.css" | relURL }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ "/css/main.css" | relURL }}"/>
     {{ range .AlternativeOutputFormats }}
         <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
     {{ end }}

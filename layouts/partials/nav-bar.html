@@ -1,8 +1,8 @@
 <nav>
     {{ range .Site.Menus.navmain }}
-    <section class="dropdown">
+    <section class="nav-section">
         <span>{{ .Name }}</span>
-        <div class="dropdown-content">
+        <div class="nav-section-content">
             {{- range .Children }}
             <a href="{{ .URL }}">{{ .Name }}</a>
             {{- end }}
