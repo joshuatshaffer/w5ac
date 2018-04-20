@@ -11,48 +11,7 @@ header {
     text-align: center;
 }
 
-nav {
-    background-color: #ddd;
-    box-shadow: 1px 2px 8px rgba(0,0,0,0.4);
-}
-
-.nav-section {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    max-width: 150px;
-}
-
-.nav-section:hover {
-    background-color: white;
-}
-
-.nav-section-content {
-    display: none;
-    position: absolute;
-    background-color: #ddd;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 5px;
-    left: -5px;
-    min-width: 100%;
-    z-index: 1;
-}
-
-.nav-section:hover .nav-section-content {
-    display: block;
-}
-
-.nav-section-content *:hover {
-    background-color: white;
-}
-
-.nav-section-content * {
-    display: block;
-    color: #8E1D36;
-    text-decoration: none;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
+@import 'nav-bar';
 
 main {
     max-width: 800px;
